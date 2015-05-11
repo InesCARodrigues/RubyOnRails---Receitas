@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Receitas</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  
+<header class="navbar navbar-fixed-top navbar-default">
+  <div class="container">
+    <%= link_to "As minhas receitas","", class: "btn btn-lg btn-success", id: "logo"   %>
+    
+    <div class="nav_item">
+       <%= link_to "teste1","", class: "btn btn-default btn-warning"%>
+    </div>
+    <div class="nav_item">
+       <%= link_to "teste2","", class: "btn btn-default btn-warning"%>
+    </div>
+    <div class="nav_item">
+       <%= link_to "teste3","", class: "btn btn-default btn-warning"%>
+    </div>
+    
+  </div>
+  
+</header>
+<div class="container">
+  <%= yield %>
+  <div class="footer">
+    <p>&copy; "Receitas" é uma app feita pela Nocas ^_^</p>
+  </div>
+</div>
+
+</body>
+</html>
